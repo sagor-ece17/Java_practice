@@ -3,6 +3,11 @@ package UltimateJavaPart2OOP.F1Classes;
 public class Employee {
     private int baseSalary;
     private int hourlyRate;
+    public Employee(int baseSalary, int hourlyRate){ //constructor
+        setBaseSalary(baseSalary);
+        setHourlyRate(hourlyRate);
+    }
+
 
     public int calculateWage(int extraHours){
         return baseSalary + (getHourlyRate() * extraHours);
